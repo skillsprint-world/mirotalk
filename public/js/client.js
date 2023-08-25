@@ -21,7 +21,7 @@
 
 'use strict';
 
-// https://www.w3schools.com/js/js_strict.asp
+i// https://www.w3schools.com/js/js_strict.asp
 
 const signalingServer = getSignalingServer();
 const roomId = getRoomId();
@@ -170,7 +170,7 @@ const buttons = {
         audioBtnClickAllowed: true,
         videoBtnClickAllowed: true,
         showKickOutBtn: true,
-        showSnapShotBtn: true,
+        showSnapShotBtn: false,
         showFileShareBtn: true,
         showShareVideoAudioBtn: true,
         showPrivateMessageBtn: true,
@@ -178,7 +178,7 @@ const buttons = {
         showVideoPipBtn: showVideoPipBtn,
     },
     local: {
-        showSnapShotBtn: true,
+        showSnapShotBtn: false,
         showVideoCircleBtn: true,
         showZoomInOutBtn: false,
         showVideoPipBtn: showVideoPipBtn,
@@ -230,7 +230,7 @@ let isVideoFullScreenSupported = true;
 let videoMaxFrameRate = 30;
 let screenMaxFrameRate = 30;
 
-let videoQualitySelectedIndex = 0; // default
+let videoQualitySelectedIndex = 3; // default
 
 let leftChatAvatar;
 let rightChatAvatar;
@@ -1042,7 +1042,7 @@ function handleServerInfo(config) {
     }
 
     if (notify && peers_count == 1) {
-        shareRoomMeetingURL(true);
+        // shareRoomMeetingURL(true);
     } else {
         checkShareScreen();
     }
@@ -1093,8 +1093,10 @@ function handleRules(isPresenter) {
         buttons.remote.videoBtnClickAllowed = false;
         buttons.remote.showKickOutBtn = false;
         buttons.whiteboard.whiteboardLockBtn = false;
+        buttons.main.showRecordStreamBtn = false;
         //...
     } else {
+        buttons.main.showRecordStreamBtn = true;
         buttons.settings.showTabRoomParticipants = true;
         buttons.settings.showTabRoomSecurity = true;
         buttons.settings.showLockRoomBtn = !isRoomLocked;

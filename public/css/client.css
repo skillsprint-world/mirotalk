@@ -234,6 +234,10 @@ body {
     color: #ff2d00;
 }
 
+.hide{
+    display: none !important;
+}
+
 .fa-microphone-slash,
 .fa-video-slash {
     color: #e74c3c !important;

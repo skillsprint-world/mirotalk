@@ -97,8 +97,8 @@ access to use this app.
         <!-- Start buttons bar https://fontawesome.com/icons?d=gallery -->
 
         <div id="buttonsBar" class="fadein">
-            <button id="shareRoomBtn" class="fas fa-share-alt"></button>
-            <button id="hideMeBtn" class="fas fa-user"></button>
+            <button id="shareRoomBtn" class="fas fa-share-alt hide"></button>
+            <button id="hideMeBtn" class="fas fa-user hide"></button>
             <button id="videoBtn" class="fas fa-video"></button>
             <button id="swapCameraBtn" class="fas fa-camera-rotate"></button>
             <button id="audioBtn" class="fas fa-microphone"></button>
@@ -106,12 +106,12 @@ access to use this app.
             <button id="recordStreamBtn" class="fas fa-record-vinyl"></button>
             <button id="fullScreenBtn" class="fas fa-expand-alt"></button>
             <button id="chatRoomBtn" class="fas fa-comment"></button>
-            <button id="captionBtn" class="fas fa-closed-captioning"></button>
+            <button id="captionBtn" class="fas fa-closed-captioning hide"></button>
             <button id="myHandBtn" class="fas fa-hand-paper"></button>
             <button id="whiteboardBtn" class="fas fa-chalkboard-teacher"></button>
             <button id="fileShareBtn" class="fas fa-folder-open"></button>
             <button id="mySettingsBtn" class="fas fa-cogs"></button>
-            <button id="aboutBtn" class="fas fa-question"></button>
+            <button id="aboutBtn" class="fas fa-question hide"></button>
             <button id="leaveRoomBtn" class="fas fa-right-from-bracket"></button>
         </div>
         <!-- End left buttons -->
@@ -325,7 +325,7 @@ access to use this app.
 
                 <div id="tabRoom" class="tabcontent">
                     <br />
-                    <div id="tabRoomPeerName">
+                    <div id="tabRoomPeerName" class="hide">
                         <label>My name</label><br />
                         <input id="myPeerNameSet" type="text" placeholder="Change name..." maxlength="32" />&nbsp;&nbsp;
                         <button id="myPeerNameSetBtn"><i class="fas fa-user-edit"></i>&nbsp;Change</button>
@@ -339,7 +339,7 @@ access to use this app.
                             <i class="fas fa-right-from-bracket"></i>&nbsp;Eject everyone
                         </button>
                     </div>
-                    <div id="tabRoomSecurity">
+                    <div id="tabRoomSecurity" class="hide">
                         <br /><br />
                         <label>Security</label><br />
                         <button id="lockRoomBtn"><i class="fas fa-lock-open"></i>&nbsp;Lock room</button>
@@ -394,7 +394,7 @@ access to use this app.
                     </div>
                 </div>
 
-                <div id="tabLanguages" class="tabcontent">
+                <div id="tabLanguages" class="tabcontent hide">
                     <br />
                     <div id="google_translate_element"></div>
                 </div>

@@ -14,7 +14,7 @@ class LocalStorage {
         };
 
         this.P2P_SETTINGS = {
-            video_obj_fit: 2, // cover
+            video_obj_fit: 1, // contain
             theme: 0, // dark
             buttons_bar: 0, // vertical
             pin_grid: 0, // vertical
