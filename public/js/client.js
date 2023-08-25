@@ -21,7 +21,7 @@
 
 'use strict';
 
-i// https://www.w3schools.com/js/js_strict.asp
+// https://www.w3schools.com/js/js_strict.asp
 
 const signalingServer = getSignalingServer();
 const roomId = getRoomId();
@@ -1094,9 +1094,13 @@ function handleRules(isPresenter) {
         buttons.remote.showKickOutBtn = false;
         buttons.whiteboard.whiteboardLockBtn = false;
         buttons.main.showRecordStreamBtn = false;
+        // buttons.local.showSnapShotBtn =  false;
+        // buttons.remote.showSnapShotBtn =  false;
         //...
     } else {
         buttons.main.showRecordStreamBtn = true;
+        //  buttons.remote.showSnapShotBtn = false;
+        // buttons.local.showSnapShotBtn =  false;
         buttons.settings.showTabRoomParticipants = true;
         buttons.settings.showTabRoomSecurity = true;
         buttons.settings.showLockRoomBtn = !isRoomLocked;
